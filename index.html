@@ -14,7 +14,6 @@
     <script src="./js/main.js" defer></script>
   </head>
   <body>
-   
     <header class="header">
       <h1 class="logo">
         <a href="/"><img src="./assets/logo.png" alt="Web Cafe" /></a>
@@ -41,7 +40,7 @@
         </li>
       </ul>
       <nav class="navigation">
-        <h2 class="sr-only">메인 메뉴</h2>
+        <h2 class="a11y-hidden">메인 메뉴</h2>
         <ul class="menu">
           <li class="menu-item is-active">
             <button type="button" class="menu-button">HTML에 대해</button>
@@ -148,18 +147,19 @@
     <div class="visual">
       <p class="visual-text">Web Standards &amp; Accessibility</p>
     </div>
+
     <!-- MAIN -->
     <main class="main clearfix">
+      <!-- 로그인 -->
       <div class="group group1">
         <section class="login">
+          <!-- 로그인 - 타이틀 -->
           <h2 class="login-title">로그인</h2>
-          <form
-            method="POST"
-            action="https://formspree.io/seulbinim@gmail.com"
-            class="login-form"
-          >
+          <!-- 로그인 - 폼 시작 -->
+          <form method="POST" action="" class="login-form">
             <fieldset>
               <legend>회원 로그인 폼</legend>
+              <!-- 로그인 - 이메일 -->
               <div class="user-email">
                 <label for="userEmail">아이디</label>
                 <input
@@ -170,6 +170,7 @@
                   placeholder="fe@euid.dev"
                 />
               </div>
+              <!-- 로그인 - 비밀번호 -->
               <div class="user-pw">
                 <label for="userPw">비밀번호</label>
                 <input
@@ -180,9 +181,11 @@
                   placeholder="8자리 이상"
                 />
               </div>
+              <!-- 로그인 - 버튼 -->
               <button type="submit" class="login-button">로그인</button>
             </fieldset>
           </form>
+          <!-- 사인 - 회원가입, 아이디/비번 찾기 -->
           <div class="sign">
             <a href="/"
               ><span class="icon-right-open" aria-hidden="true"></span
@@ -194,7 +197,9 @@
             >
           </div>
         </section>
-        
+      </div>
+    </main>
+
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/menu-tab.js"></script> -->
   </body>
