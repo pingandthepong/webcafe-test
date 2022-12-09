@@ -425,3 +425,31 @@ a {
   margin-right: 8px;
   color: #e85e2c;
 } */
+
+/* 유효성검사 배너 */
+.validation-list {
+  /* 원래는 20px만 떨어뜨리려고 하는건데, 그림자까지 계산해서 25px */
+  margin-top: 25px;
+}
+
+.validation-list li {
+  /* 위의 li는 mt10px이 안먹은 것 같다? 마진은 겹치기 떄문!(마진병합) */
+  /* mt가 a에 있어도 결과가 같게 보이지만, a는 부품이기기에 케이스인 li에 주는 게 낫다. */
+  margin-top: 10px;
+}
+
+.validation-list a {
+  display: block;
+  border: 1px solid #aaa;
+  border-radius: 20px;
+  padding: 10px 10px 10px 42px;
+  background: url(./images/validation_icon.png) no-repeat 20px 50%,
+    #ccc linear-gradient(to bottom, #ccc, #eee);
+}
+
+.validation-list a:hover,
+.validation-list a:focus {
+  color: #f00;
+}
+
+/* 슬로건 */
