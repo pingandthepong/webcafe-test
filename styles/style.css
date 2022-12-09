@@ -446,6 +446,7 @@ a {
   /* a의 bg가 아닌, a::before의 content url로도 가능 */
   /* ::before로 하면 vertical-align:middle; 추가 (a는 inline, va는 inline에 적용 가능한 속성  */
   /* 하지만 bg가 깔끔함! */
+  /* gradient는 이미지 속성. 이미지를 두 개 넣은 것 */
   background: url(./images/validation_icon.png) no-repeat 20px 50%,
     #ccc linear-gradient(to bottom, #ccc, #eee);
 }
