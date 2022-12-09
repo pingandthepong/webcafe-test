@@ -330,9 +330,9 @@ a {
   /* order: 1; */
 }
 
-/* .group3 {
+.group3 {
   width: 190px;
-} */
+}
 
 /* 로그인 */
 .login {
@@ -358,19 +358,17 @@ a {
 
 .login-form fieldset {
   position: relative;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 5px;
 }
 
-/* 로그인 - 이메일 */
-.user-email {
-  background-color: skyblue;
-}
-/* 로그인 - 비밀번호 */
+/* 로그인 - 이메일, 비밀번호 */
+.user-email,
 .user-pw {
-  background: lime;
+  margin-bottom: 5px;
 }
 
 .login-form label {
-  background: salmon;
   display: inline-block;
   width: 4em;
 }
@@ -378,13 +376,25 @@ a {
   width: 90px;
   height: 24px;
   border: 1px solid #aaa;
+  padding: 1px 1px 1px 5px;
+  /* padding: 2px 2px 2px 6px; */
+  border-radius: 2px;
 }
+
 /* 로그인 - 버튼 */
 .login-button {
   position: absolute;
   top: 0;
   right: 0;
+  height: 53px;
+  background: orangered;
+  color: #fff;
+  font-size: 1.3rem;
+  border: 0;
+  border-radius: 5px;
+  padding: 0 8px;
 }
+
 /* 사인 - 회원가입, 아이디/비번 찾기 */
 .sign {
   background: #fff;
@@ -405,27 +415,6 @@ a {
   margin-bottom: 6px;
 }
 
-.login-form input {
-  width: 90px;
-  height: 22px;
-  border: 1px solid #aaa;
-  border-radius: 2px;
-  padding: 2px 2px 2px 6px;
-}
-
-.login-button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50px;
-  height: 50px;
-  padding: 0;
-  font-size: 1.3rem;
-  color: #fff;
-  background: #ed552f;
-  border-radius: 2px;
-  border: 0;
-}
 
 .sign {
   border-radius: 0 0 5px 5px;
