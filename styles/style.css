@@ -608,7 +608,6 @@ a {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  text-overflow: ellipsis;
 }
 .board-list a {
   /* 글자 줄을 다 클릭커블 영역으로 */
@@ -616,6 +615,7 @@ a {
   background: salmon;
   white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 .board-list time {
   flex-shrink: 0;
