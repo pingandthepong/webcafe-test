@@ -475,6 +475,7 @@ a {
 .term-list div {
   margin-top: 10px;
   /* 독립적으로 만드는 flow-root */
+  /* flow-root 대신 ov:h도 가능 */
   display: flow-root;
 }
 .term-list-subject,
