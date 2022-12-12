@@ -499,11 +499,11 @@ a {
   margin-top: 5px;
 }
 
-.even .term-list-subject,
-.even .term-list-brief {
+.cross .term-list-subject,
+.cross .term-list-brief {
   float: left;
 }
-.even .term-list-thumbnail {
+.cross .term-list-thumbnail {
   float: right;
 }
 
