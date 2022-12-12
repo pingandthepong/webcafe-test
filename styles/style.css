@@ -559,6 +559,49 @@ a {
   font-size: 1.2rem;
 }
 
-/* board */
+/* 공지사항 및 자료실 */
+.board {
+  margin-top: 20px;
+  position: relative;
+}
+.tab {
+  font-size: 1.4rem;
+  background: none;
+  padding: 5px 10px;
+  border-radius: 5px 5px 0 0;
+  font-weight: 400;
+  background: #ccc;
+  border: 1px solid #aaa;
+  border-bottom: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+.tab.is-select {
+  background: #fff;
+  border: 2px solid #e8852e;
+  border-bottom: none;
+  color: #ed552f;
+}
+
+.tab-panel {
+  display: none;
+}
+
+/* 붙여쓰기 주의!!! and조건 */
+.is-select.tab-panel {
+  display: block;
+}
+.board-list {
+  margin-top: 15px;
+}
+.board-list li {
+  margin: 10px;
+}
+.board-list li time {
+}
+.board-more {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 
 /* 슬로건 */
