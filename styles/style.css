@@ -522,7 +522,6 @@ a {
 }
 
 .form-group {
-  /* float: left; */
   flex-grow: 1;
   display: flex;
   flex-flow: row nowrap;
@@ -542,7 +541,6 @@ a {
   /* firefox 이슈 width:100%로 해결 가능 */
   width: 100%;
   /* input에 margin을 주면 더해지기에 grow에 문제가 생김. label mr10과 폼그룹 pr10  */
-  /* margin: 0 10px; */
   border: 1px solid #aaa;
   height: 24px;
   border-radius: 3px;
@@ -559,6 +557,8 @@ a {
   border-radius: 3px;
   padding: 0 10px;
   font-size: 1.2rem;
-  /* float: right; */
 }
+
+/* board */
+
 /* 슬로건 */
