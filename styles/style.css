@@ -564,44 +564,62 @@ a {
   margin-top: 20px;
   position: relative;
 }
-.tab {
-  font-size: 1.4rem;
-  background: none;
-  padding: 5px 10px;
-  border-radius: 5px 5px 0 0;
-  font-weight: 400;
-  background: #ccc;
-  border: 1px solid #aaa;
-  border-bottom: none;
-  color: rgba(0, 0, 0, 0.5);
+.tab-list {
+  /* flex로 버튼 사이 공백 없애기 */
+  display: flex;
+  flex-flow: row nowrap;
 }
-.tab.is-select {
+.tab {
+  border: 1px solid #aaa;
+  background: #ccc;
+  border-radius: 5px 5px 0 0;
+  padding: 5px 10px;
+  color: #666;
+}
+.is-select.tab {
   background: #fff;
-  border: 2px solid #e8852e;
-  border-bottom: none;
   color: #ed552f;
+  border-color: currentColor currentColor #fff currentColor;
 }
 
 .tab-panel {
   display: none;
-}
-
-/* 붙여쓰기 주의!!! and조건 */
-.is-select.tab-panel {
-  display: block;
+  margin-top: 15px;
 }
 .board-list {
   margin-top: 15px;
 }
-.board-list li {
-  margin: 10px;
-}
-.board-list li time {
-}
 .board-more {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -8px;
+  right: -8px;
+  padding: 8px;
+}
+.icon-plus::before {
+  color: hsla(110, 50%, 30%, 1);
+}
+/* 붙여쓰기 주의!!! and조건 */
+.is-select.tab-panel {
+  display: block;
+}
+
+.board-list li {
+  margin: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  text-overflow: ellipsis;
+}
+.board-list a {
+  /* 글자 줄을 다 클릭커블 영역으로 */
+  flex-grow: 1;
+  background: salmon;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.board-list time {
+  flex-shrink: 0;
+  margin-left: 10px;
 }
 
 /* 슬로건 */
