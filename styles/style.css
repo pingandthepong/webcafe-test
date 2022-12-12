@@ -470,32 +470,40 @@ a {
   font-weight: 700;
 }
 .term-list {
-  background: yellow;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 .term-list div {
-  background-color: pink;
   margin-top: 10px;
   /* 독립적으로 만드는 flow-root */
   display: flow-root;
 }
-.term-list-subject {
-  background: lime;
+.term-list-subject,
+.term-list-brief {
   float: right;
   width: 145px;
 }
+
+.term-list-subject {
+  color: #296897;
+  font-weight: 500;
+}
 .term-list-thumbnail {
-  background: purple;
   float: left;
 }
 .term-list-thumbnail img {
   vertical-align: middle;
 }
 .term-list-brief {
-  background: coral;
+  line-height: 1.5;
+  margin-top: 5px;
+}
+
+.even .term-list-subject,
+.even .term-list-brief {
+  float: left;
+}
+.even .term-list-thumbnail {
   float: right;
-  width: 145px;
-  margin-top: 10px;
 }
 
 /* 슬로건 */
