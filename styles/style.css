@@ -456,4 +456,46 @@ a {
   color: #f00;
 }
 
+/* 웹 관련 용어 */
+.term {
+  margin-top: 20px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+  padding: 15px;
+}
+
+.term-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.term-list {
+  background: yellow;
+  margin-top: 10px;
+}
+.term-list div {
+  background-color: pink;
+  margin-top: 10px;
+  /* 독립적으로 만드는 flow-root */
+  display: flow-root;
+}
+.term-list-subject {
+  background: lime;
+  float: right;
+  width: 145px;
+}
+.term-list-thumbnail {
+  background: purple;
+  float: left;
+}
+.term-list-thumbnail img {
+  vertical-align: middle;
+}
+.term-list-brief {
+  background: coral;
+  float: right;
+  width: 145px;
+  margin-top: 10px;
+}
+
 /* 슬로건 */
