@@ -684,14 +684,14 @@ a {
 /* 신규 이벤트 및 관련 사이트 */
 .event {
   border-bottom: 1px solid #aaa;
-  position: relative;
+}
+.event-title {
+  display: inline-block;
 }
 .event-button-wrapper {
   height: 18px;
   overflow: hidden;
-  position: absolute;
-  top: 0;
-  right: 0;
+  float: right;
 }
 .event-button {
   width: 19px;
@@ -716,18 +716,35 @@ a {
 .event-brief {
   line-height: 1.5;
 }
-
 .related {
   margin-top: 10px;
 }
 .related-list {
   margin-top: 10px;
-  background: #fff;
+  background-color: #fff;
   border: 1px solid #aaa;
   border-radius: 5px;
-  padding: 5px 20px;
+  height: 27px;
+  overflow: hidden;
+  transition: height 400ms 0ms, padding 400ms 400ms;
+  padding: 0;
 }
-
+.related-list:hover,
+.related-list:focus {
+  height: 147px;
+  padding-top: 10px;
+}
+.related-list li {
+  height: 25px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 0 5px;
+}
+.related-list a {
+  flex-grow: 1;
+  padding: 0 10px;
+}
 /* 슬로건 */
 .slogan {
 }
