@@ -3,6 +3,7 @@
 @import url("./normalize.css");
 @import url("./reset.css");
 @import url("./form.css");
+@import url("./module.css");
 
 *,
 *::before,
@@ -637,7 +638,6 @@ a {
 }
 .news-title {
   font-size: 1.5rem;
-  color: #ed552f;
   font-weight: 700;
 }
 .news-link {
@@ -681,7 +681,12 @@ a {
   padding: 8px;
 }
 
-/* event */
+/* 신규 이벤트 및 관련 사이트 */
+.gradient-effect {
+}
+.accent-color {
+  color: #ed552f;
+}
 
 .event {
 }
@@ -693,3 +698,8 @@ a {
 }
 
 /* 슬로건 */
+.slogan {
+}
+/* footer */
+.footer {
+}
