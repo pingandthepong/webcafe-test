@@ -650,7 +650,7 @@ a {
 }
 .news-item-title {
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 6px;
 }
 .news-item time {
@@ -668,16 +668,28 @@ a {
   text-align: center;
 }
 .news-item-thumbnail img {
-  box-shadow: 0 15px 10px 5px #eee;
+  box-shadow: 0 15px 10px 5px#eee;
 }
 .news-item-thumbnail figcaption {
   margin-top: 15px;
+  font-size: 1.2rem;
 }
 .news-more {
   position: absolute;
   top: -8px;
   right: -8px;
   padding: 8px;
+}
+
+/* event */
+
+.event {
+}
+.event-title {
+}
+.event-button-wrapper {
+}
+.event-button-prev {
 }
 
 /* 슬로건 */
