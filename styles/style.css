@@ -682,19 +682,50 @@ a {
 }
 
 /* 신규 이벤트 및 관련 사이트 */
-.gradient-effect {
-}
-.accent-color {
-  color: #ed552f;
-}
-
 .event {
-}
-.event-title {
+  border-bottom: 1px solid #aaa;
+  position: relative;
 }
 .event-button-wrapper {
+  height: 18px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
-.event-button-prev {
+.event-button {
+  width: 19px;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  background: url(./images/back_forward.png) no-repeat;
+  /* IR기법 - Image Replacement*/
+  overflow: hidden;
+  text-indent: -9999px;
+}
+.event-button-next {
+  background-position: right;
+}
+.event-thumbnail,
+.event-brief {
+  margin: 10px 0;
+}
+.event-thumbnail img {
+  box-shadow: 7px 7px 0 0 #aaa;
+}
+.event-brief {
+  line-height: 1.5;
+}
+
+.related {
+  margin-top: 10px;
+}
+.related-list {
+  margin-top: 10px;
+  background: #fff;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 5px 20px;
 }
 
 /* 슬로건 */
