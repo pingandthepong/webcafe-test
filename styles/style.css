@@ -831,6 +831,7 @@ a {
   right: 0;
   width: 100%;
   height: 100%;
+  /* bg가 아닌 content에 넣어도 되지만, disable background-image를 했을 때 안감춰짐(웹접근성 관점) */
   background: url(./images/coffee.png) no-repeat 0 0;
 }
 .slogan-content {
